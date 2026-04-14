@@ -1,4 +1,4 @@
-# 🛒 Product Catalog API
+# Product Catalog API
 
 <div align="center">
 
@@ -16,24 +16,24 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- ✅ **RESTful API** with versioned endpoints (`/api/v1/`)
-- ✅ **Clean Architecture** — Domain, Application, Infrastructure, API layers
-- ✅ **SOLID Principles** applied throughout the codebase
-- ✅ **Distributed Cache** with Redis (falls back to in-memory for dev)
-- ✅ **FluentValidation** for robust input validation
-- ✅ **Serilog** for structured logging with file rotation
-- ✅ **Swagger/OpenAPI** documentation out of the box
-- ✅ **Global Exception Middleware** for consistent error responses
-- ✅ **Soft Delete** pattern (products are deactivated, not removed)
-- ✅ **Unit Tests** with xUnit, Moq and FluentAssertions
-- ✅ **Docker & Docker Compose** ready
-- ✅ **Health Check** endpoint at `/health`
+- **RESTful API** with versioned endpoints (`/api/v1/`)
+- **Clean Architecture** — Domain, Application, Infrastructure, API layers
+- **SOLID Principles** applied throughout the codebase
+- **Distributed Cache** with Redis (falls back to in-memory for dev)
+- **FluentValidation** for robust input validation
+- **Serilog** for structured logging with file rotation
+- **Swagger/OpenAPI** documentation out of the box
+- **Global Exception Middleware** for consistent error responses
+- **Soft Delete** pattern (products are deactivated, not removed)
+- **Unit Tests** with xUnit, Moq and FluentAssertions
+- **Docker & Docker Compose** ready
+- **Health Check** endpoint at `/health`
 
 ---
 
-## 🏛 Architecture
+## Architecture
 
 This project follows **Clean Architecture**, ensuring separation of concerns and testability.
 
@@ -89,7 +89,7 @@ API → Application → Domain
 
 ---
 
-### ▶️ Option 1 — Run locally (no Redis, uses in-memory cache)
+### Option 1 — Run locally (no Redis, uses in-memory cache)
 
 ```bash
 # 1. Clone the repository
@@ -184,7 +184,7 @@ Base URL: `http://localhost:5000/api/v1`
 
 ---
 
-## 🧠 Caching Strategy
+## Caching Strategy
 
 The API uses a **cache-aside pattern**:
 
@@ -209,7 +209,7 @@ In `appsettings.json` or environment variables:
 ```json
 {
   "ConnectionStrings": {
-    "Redis": "localhost:6379"   // Leave empty to use in-memory cache
+    "Redis": "localhost:6379"  
   }
 }
 ```
@@ -249,7 +249,7 @@ git commit -m "docs: add comprehensive readme with architecture and usage guide"
 
 ---
 
-## 🛡 SOLID Principles Applied
+## SOLID Principles Applied
 
 | Principle | Where |
 |-----------|-------|
@@ -260,14 +260,3 @@ git commit -m "docs: add comprehensive readme with architecture and usage guide"
 | **D** — Dependency Inversion | All dependencies injected via constructor; concrete types never referenced in high-level modules |
 
 ---
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-<div align="center">
-Made with ❤️ and C# · Give it a ⭐ if it helped you!
-</div>
-# product-catalog
