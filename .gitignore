@@ -1,0 +1,38 @@
+## .NET
+*.user
+*.userosscache
+*.suo
+*.userprefs
+.vs/
+bin/
+obj/
+out/
+publish/
+*.nupkg
+*.snupkg
+*.log
+logs/
+
+## Build
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+
+## Test results
+TestResults/
+*.trx
+*.coverage
+
+## User-specific
+*.rsuser
+.idea/
+.vscode/
+*.swp
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Secrets (never commit!)
+appsettings.Production.json
+secrets.json
